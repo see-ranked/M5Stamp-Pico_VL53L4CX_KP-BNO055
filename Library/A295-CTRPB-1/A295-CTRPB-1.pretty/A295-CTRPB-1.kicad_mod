@@ -1,0 +1,298 @@
+(footprint "A295-CTRPB-1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "USB Type-C Receptacle, Power Only, Chang Enn A295-CTRPB-1, Through-Hole")
+	(tags "USB Type-C power connector receptacle through-hole")
+	(property "Reference" "J**"
+		(at 0 -5 0)
+		(layer "F.SilkS")
+		(uuid "00000000-0000-0000-0000-000000000001")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "A295-CTRPB-1"
+		(at 0 5 0)
+		(layer "F.Fab")
+		(uuid "00000000-0000-0000-0000-000000000002")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://akizukidenshi.com/goodsaffix/A295-CTRPB-1-new.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-0000-0000-000000000004")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "USB Type-C Receptacle, Power Only, 5V 3A, Through-Hole"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-0000-0000-000000000005")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Chang Enn Co., Ltd."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-0000-0000-000000000006")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "A295-CTRPB-1"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-0000-0000-000000000007")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Supplier" "Akizuki Denshi"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-0000-0000-000000000008")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "SupplierPartNumber" "116895"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00000000-0000-0000-0000-000000000009")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.5 -3.5)
+		(end -4.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cadabfff-dbe4-4fcb-99d1-c573a1f4c699")
+	)
+	(fp_line
+		(start -4.5 -3.5)
+		(end -3.5 -3.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0b1372a6-3b3c-4324-98ca-b9c2c37ffb8c")
+	)
+	(fp_line
+		(start 4.5 -3.5)
+		(end 3.5 -3.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "560e7f0d-ddec-4da5-b68c-dd0fd327691d")
+	)
+	(fp_line
+		(start 4.5 -3.5)
+		(end 4.5 -2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f4ed0b5e-99af-4c58-9576-65c17553e5aa")
+	)
+	(fp_line
+		(start 4.5 3.2)
+		(end -4.5 3.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "00000000-0000-0000-0000-000000000013")
+	)
+	(fp_line
+		(start -5 -4)
+		(end 5 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "00000000-0000-0000-0000-000000000014")
+	)
+	(fp_line
+		(start -5 4)
+		(end -5 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "00000000-0000-0000-0000-000000000015")
+	)
+	(fp_line
+		(start 5 -4)
+		(end 5 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "00000000-0000-0000-0000-000000000016")
+	)
+	(fp_line
+		(start 5 4)
+		(end -5 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "00000000-0000-0000-0000-000000000017")
+	)
+	(fp_line
+		(start -4.425 -3.25)
+		(end 4.425 -3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "00000000-0000-0000-0000-000000000018")
+	)
+	(fp_line
+		(start -4.425 3.25)
+		(end -4.425 -3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "00000000-0000-0000-0000-000000000019")
+	)
+	(fp_line
+		(start 4.425 -3.25)
+		(end 4.425 3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "00000000-0000-0000-0000-000000000020")
+	)
+	(fp_line
+		(start 4.425 3.25)
+		(end -4.425 3.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "00000000-0000-0000-0000-000000000021")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "00000000-0000-0000-0000-000000000022")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "GND" thru_hole roundrect
+		(at -1.815 3.79)
+		(size 0.96 0.71)
+		(drill oval 0.6 0.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "00000000-0000-0000-0000-000000000023")
+	)
+	(pad "SH" thru_hole roundrect
+		(at -4.3 0)
+		(size 0.71 1.24)
+		(drill oval 0.35 0.88)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "00000000-0000-0000-0000-000000000025")
+	)
+	(pad "SH" thru_hole roundrect
+		(at 4.3 0)
+		(size 0.71 1.24)
+		(drill oval 0.35 0.88)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "00000000-0000-0000-0000-000000000026")
+	)
+	(pad "VBUS" thru_hole roundrect
+		(at 1.815 3.79)
+		(size 0.96 0.71)
+		(drill oval 0.6 0.35)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "00000000-0000-0000-0000-000000000024")
+	)
+	(embedded_fonts no)
+	(model "${KICAD8_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4085.wrl"
+		(offset
+			(xyz 3 -3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 180)
+		)
+	)
+)

@@ -237,9 +237,7 @@ USB Type-C Connector (J1: A295-CTRPB-1)
 
 ## データシート
 
-![データシート1](file:///C:/Users/okita/.gemini/antigravity/brain/23eff23a-5df6-4b44-80e2-2e2566b71f52/a295_ctrpb_1_datasheet_1_1768726498657.png)
-
-![データシート2](file:///C:/Users/okita/.gemini/antigravity/brain/23eff23a-5df6-4b44-80e2-2e2566b71f52/a295_ctrpb_1_datasheet_2_1768726508259.png)
+データシートは[秋月電子通商のウェブサイト](https://akizukidenshi.com/goodsaffix/A295-CTRPB-1-new.pdf)で入手できます。
 
 ## 参考リンク
 

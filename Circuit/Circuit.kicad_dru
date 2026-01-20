@@ -1,0 +1,162 @@
+# JLCPCB Design Rules for KiCad v9.0 (2-Layer PCB)
+# Updated: 2026-01-18
+# Based on JLCPCB specifications: https://jlcpcb.com/capabilities/pcb-capabilities
+# 
+# Specifications for 2-layer FR-4 PCB with 1oz copper
+# For use with KiCad 9.0 Custom Design Rules
+
+(version 1)
+
+# ============================================================================
+# TRACK WIDTH AND SPACING (1oz Copper)
+# ============================================================================
+
+(rule "Track width, outer layer (1oz copper)"
+	(layer outer)
+	(condition "A.Type == 'track'")
+	(constraint track_width (min 0.10mm))
+)
+
+(rule "Track spacing, outer layer (1oz copper)"
+	(layer outer)
+	(condition "A.Type == 'track' && B.Type == A.Type")
+	(constraint clearance (min 0.10mm))
+)
+
+# ============================================================================
+# VIA SPECIFICATIONS
+# ============================================================================
+
+(rule "Via diameter"
+	(condition "A.Type == 'via'")
+	(constraint via_diameter (min 0.25mm))
+)
+
+(rule "Via hole size"
+	(condition "A.Type == 'via'")
+	(constraint hole_size (min 0.15mm))
+)
+
+# ============================================================================
+# HOLE SPECIFICATIONS
+# ============================================================================
+
+(rule "Hole diameter (PTH)"
+	(condition "A.isPlated()")
+	(constraint hole_size (min 0.15mm) (max 6.3mm))
+)
+
+(rule "Hole diameter (NPTH)"
+	(layer outer)
+	(condition "!A.isPlated()")
+	(constraint hole_size (min 0.15mm) (max 6.3mm))
+)
+
+(rule "Castellated hole diameter"
+	(layer outer)
+	(condition "A.Type == 'pad' && A.Fabrication_Property == 'Castellated pad'")
+	(constraint hole_size (min 0.6mm))
+)
+
+# ============================================================================
+# ANNULAR RING
+# ============================================================================
+# JLCPCB: 2-Layer boards require minimum 0.18mm annular ring (absolute minimum)
+# Recommended: 0.25mm for better reliability
+
+(rule "Annular ring width (via and PTH) - 2 Layer"
+	(layer outer)
+	(condition "A.isPlated()")
+	(constraint annular_width (min 0.18mm))
+)
+
+# ============================================================================
+# CLEARANCES
+# ============================================================================
+
+(rule "Clearance: hole to hole (perimeter), different nets"
+	(layer outer)
+	(condition "A.Net != B.Net")
+	(constraint hole_to_hole (min 0.5mm))
+)
+
+(rule "Clearance: hole to hole (perimeter), same net"
+	(layer outer)
+	(condition "A.Net == B.Net")
+	(constraint hole_to_hole (min 0.254mm))
+)
+
+(rule "Clearance: track to NPTH hole (perimeter)"
+	(condition "!A.isPlated() && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.254mm))
+)
+
+(rule "Clearance: track to PTH hole perimeter"
+	(condition "A.isPlated() && B.Type == 'track' && A.Net != B.Net")
+	(constraint hole_clearance (min 0.33mm))
+)
+
+(rule "Clearance: track to pad"
+	(condition "A.Type == 'pad' && B.Type == 'track' && A.Net != B.Net")
+	(constraint clearance (min 0.2mm))
+)
+
+(rule "Clearance: pad/via to pad/via"
+	(layer outer)
+	(condition "A.isPlated() && B.isPlated() && A.Net != B.Net")
+	(constraint clearance (min 0.127mm))
+)
+
+# ============================================================================
+# EDGE CLEARANCES
+# ============================================================================
+# JLCPCB: Copper to routed edge >= 0.2mm
+# JLCPCB: Copper to V-cut edge >= 0.4mm
+
+(rule "Edge (routed) to track clearance"
+	(condition "A.Type == 'track'")
+	(constraint edge_clearance (min 0.2mm))
+)
+
+# Note: General copper-to-edge clearance should be set in
+# Board Setup > Design Rules > Constraints > Copper to edge clearance
+
+# ============================================================================
+# SILKSCREEN (LEGEND)
+# ============================================================================
+
+# Note: Silkscreen line width should be set in
+# Board Setup > Design Rules > Constraints > Silkscreen > Minimum item clearance
+# or configured in the silkscreen layers themselves
+
+(rule "Silkscreen text"
+	(layer "?.Silkscreen")
+	(condition "A.Type == 'Text' || A.Type == 'Text Box'")
+	(constraint text_thickness (min 0.153mm))
+	(constraint text_height (min 1.0mm))
+)
+
+(rule "Pad to Silkscreen clearance"
+	(layer outer)
+	(condition "A.Type == 'pad' && B.Layer == '?.Silkscreen'")
+	(constraint silk_clearance (min 0.15mm))
+)
+
+# ============================================================================
+# SOLDERMASK
+# ============================================================================
+# Note: Soldermask expansion and bridge settings must be configured
+# in Board Setup > Physical Stackup, not in custom rules
+# JLCPCB: Soldermask bridge >= 0.10mm (Green, 1oz)
+# JLCPCB: Soldermask expansion: 1:1 (0mm default)
+# These settings are not available as custom rule constraints in KiCad 9.0
+
+# ============================================================================
+# BOARD OUTLINE
+# ============================================================================
+# JLCPCB: Minimum board size 10mm × 10mm
+# JLCPCB: Hole to board edge >= 1mm (recommended)
+
+(rule "Hole to board edge"
+	(constraint edge_clearance (min 1.0mm))
+)

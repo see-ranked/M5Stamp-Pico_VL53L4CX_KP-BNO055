@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "M5Stack M5Stamp Pico footprint - PCB side with PIN HEADERS, M5Stamp side with PIN SOCKETS - 15 pins total")
+	(descr "M5Stack M5Stamp Pico footprint - PCB side with PIN HEADERS, M5Stamp side with PIN SOCKETS - 15 pins total - Version 02 with wider pin spacing")
 	(tags "M5Stack M5Stamp Pico ESP32 PICO")
 	(property "Reference" "REF**"
 		(at 0 -14 0)
@@ -12,7 +12,7 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
+				(thickness 0.16)
 			)
 		)
 	)
@@ -24,7 +24,7 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
+				(thickness 0.16)
 			)
 		)
 	)
@@ -41,7 +41,7 @@
 			)
 		)
 	)
-	(property "Description" "M5Stack M5Stamp Pico - PCB with headers, module with sockets - 15 pins"
+	(property "Description" "M5Stack M5Stamp Pico - PCB with headers, module with sockets - 15 pins - Version 02"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -56,8 +56,8 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start -9.5 -12.5)
-		(end 9.5 -12.5)
+		(start -10.77 -12.5)
+		(end 10.77 -12.5)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -66,8 +66,8 @@
 		(uuid "00000000-0000-0000-0000-000000000009")
 	)
 	(fp_line
-		(start -9.5 12.5)
-		(end -9.5 -12.5)
+		(start -10.77 12.5)
+		(end -10.77 -12.5)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -76,8 +76,8 @@
 		(uuid "00000000-0000-0000-0000-00000000000c")
 	)
 	(fp_line
-		(start 9.5 -12.5)
-		(end 9.5 12.5)
+		(start 10.77 -12.5)
+		(end 10.77 12.5)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -86,8 +86,8 @@
 		(uuid "00000000-0000-0000-0000-00000000000a")
 	)
 	(fp_line
-		(start 9.5 12.5)
-		(end -9.5 12.5)
+		(start 10.77 12.5)
+		(end -10.77 12.5)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -96,8 +96,8 @@
 		(uuid "00000000-0000-0000-0000-00000000000b")
 	)
 	(fp_circle
-		(center -11 -10.16)
-		(end -10.5 -10.16)
+		(center -12.27 -10.16)
+		(end -11.77 -10.16)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -107,8 +107,8 @@
 		(uuid "00000000-0000-0000-0000-00000000000d")
 	)
 	(fp_line
-		(start -10.5 -13.5)
-		(end 10.5 -13.5)
+		(start -11.77 -13.5)
+		(end 11.77 -13.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -117,8 +117,8 @@
 		(uuid "00000000-0000-0000-0000-00000000000e")
 	)
 	(fp_line
-		(start -10.5 13.5)
-		(end -10.5 -13.5)
+		(start -11.77 13.5)
+		(end -11.77 -13.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -127,8 +127,8 @@
 		(uuid "00000000-0000-0000-0000-000000000011")
 	)
 	(fp_line
-		(start 10.5 -13.5)
-		(end 10.5 13.5)
+		(start 11.77 -13.5)
+		(end 11.77 13.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -137,8 +137,8 @@
 		(uuid "00000000-0000-0000-0000-00000000000f")
 	)
 	(fp_line
-		(start 10.5 13.5)
-		(end -10.5 13.5)
+		(start 11.77 13.5)
+		(end -11.77 13.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -147,8 +147,8 @@
 		(uuid "00000000-0000-0000-0000-000000000010")
 	)
 	(fp_line
-		(start -9 -12)
-		(end 9 -12)
+		(start -10.27 -12)
+		(end 10.27 -12)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -157,8 +157,8 @@
 		(uuid "00000000-0000-0000-0000-000000000012")
 	)
 	(fp_line
-		(start -9 12)
-		(end -9 -12)
+		(start -10.27 12)
+		(end -10.27 -12)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -167,8 +167,8 @@
 		(uuid "00000000-0000-0000-0000-000000000015")
 	)
 	(fp_line
-		(start 9 -12)
-		(end 9 12)
+		(start 10.27 -12)
+		(end 10.27 12)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -177,8 +177,8 @@
 		(uuid "00000000-0000-0000-0000-000000000013")
 	)
 	(fp_line
-		(start 9 12)
-		(end -9 12)
+		(start 10.27 12)
+		(end -10.27 12)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -186,168 +186,168 @@
 		(layer "F.Fab")
 		(uuid "00000000-0000-0000-0000-000000000014")
 	)
-	(fp_text user "1-G26"
-		(at -8.5 -10.16 0)
+	(fp_text user "1"
+		(at -9.2 -10.16 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000025")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "2-G36"
-		(at -8.5 -7.62 0)
+	(fp_text user "2"
+		(at -9.2 -7.62 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000026")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "3-G18"
-		(at -8.5 -5.08 0)
+	(fp_text user "3"
+		(at -9.2 -5.08 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000027")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "4-G19"
-		(at -8.5 -2.54 0)
+	(fp_text user "4"
+		(at -9.2 -2.54 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000028")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "5-G21"
-		(at -8.5 0 0)
+	(fp_text user "5"
+		(at -9.2 0 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000029")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "6-G22"
-		(at -8.5 2.54 0)
+	(fp_text user "6"
+		(at -9.2 2.54 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-00000000002a")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "7-G25"
-		(at -8.5 5.08 0)
+	(fp_text user "7"
+		(at -9.2 5.08 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-00000000002b")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "8-5V"
-		(at -8.5 7.62 0)
+	(fp_text user "8"
+		(at -9.2 7.62 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-00000000002c")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "9-GND"
-		(at -8.5 10.16 0)
+	(fp_text user "9"
+		(at -9.2 10.16 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-00000000002d")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "GND-10"
-		(at 8.5 10.16 0)
+	(fp_text user "10"
+		(at 9.7 10.16 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-00000000002e")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "G0-11"
-		(at 8.5 7.62 0)
+	(fp_text user "11"
+		(at 9.7 7.62 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-00000000002f")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "EN-12"
-		(at 8.5 5.08 0)
+	(fp_text user "12"
+		(at 9.7 5.08 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000030")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "G3-13"
-		(at 8.5 2.54 0)
+	(fp_text user "13"
+		(at 9.7 2.54 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000031")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "G1-14"
-		(at 8.5 0 0)
+	(fp_text user "14"
+		(at 9.7 0 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000032")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
-	(fp_text user "3V3-15"
-		(at 8.5 -2.54 0)
+	(fp_text user "15"
+		(at 9.7 -2.54 0)
 		(layer "F.SilkS")
 		(uuid "00000000-0000-0000-0000-000000000033")
 		(effects
 			(font
-				(size 0.6 0.6)
-				(thickness 0.1)
+				(size 1 1)
+				(thickness 0.16)
 			)
 		)
 	)
@@ -374,7 +374,7 @@
 		)
 	)
 	(pad "1" thru_hole rect
-		(at -6.35 -10.16)
+		(at -7.62 -10.16)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -382,7 +382,7 @@
 		(uuid "00000000-0000-0000-0000-000000000016")
 	)
 	(pad "2" thru_hole circle
-		(at -6.35 -7.62)
+		(at -7.62 -7.62)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -390,7 +390,7 @@
 		(uuid "00000000-0000-0000-0000-000000000017")
 	)
 	(pad "3" thru_hole circle
-		(at -6.35 -5.08)
+		(at -7.62 -5.08)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -398,7 +398,7 @@
 		(uuid "00000000-0000-0000-0000-000000000018")
 	)
 	(pad "4" thru_hole circle
-		(at -6.35 -2.54)
+		(at -7.62 -2.54)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -406,7 +406,7 @@
 		(uuid "00000000-0000-0000-0000-000000000019")
 	)
 	(pad "5" thru_hole circle
-		(at -6.35 0)
+		(at -7.62 0)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -414,7 +414,7 @@
 		(uuid "00000000-0000-0000-0000-00000000001a")
 	)
 	(pad "6" thru_hole circle
-		(at -6.35 2.54)
+		(at -7.62 2.54)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -422,7 +422,7 @@
 		(uuid "00000000-0000-0000-0000-00000000001b")
 	)
 	(pad "7" thru_hole circle
-		(at -6.35 5.08)
+		(at -7.62 5.08)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -430,7 +430,7 @@
 		(uuid "00000000-0000-0000-0000-00000000001c")
 	)
 	(pad "8" thru_hole circle
-		(at -6.35 7.62)
+		(at -7.62 7.62)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -438,7 +438,7 @@
 		(uuid "00000000-0000-0000-0000-00000000001d")
 	)
 	(pad "9" thru_hole circle
-		(at -6.35 10.16)
+		(at -7.62 10.16)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -446,7 +446,7 @@
 		(uuid "00000000-0000-0000-0000-00000000001e")
 	)
 	(pad "10" thru_hole circle
-		(at 6.35 10.16)
+		(at 7.62 10.16)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -454,7 +454,7 @@
 		(uuid "00000000-0000-0000-0000-00000000001f")
 	)
 	(pad "11" thru_hole circle
-		(at 6.35 7.62)
+		(at 7.62 7.62)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -462,7 +462,7 @@
 		(uuid "00000000-0000-0000-0000-000000000020")
 	)
 	(pad "12" thru_hole circle
-		(at 6.35 5.08)
+		(at 7.62 5.08)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -470,7 +470,7 @@
 		(uuid "00000000-0000-0000-0000-000000000021")
 	)
 	(pad "13" thru_hole circle
-		(at 6.35 2.54)
+		(at 7.62 2.54)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -478,7 +478,7 @@
 		(uuid "00000000-0000-0000-0000-000000000022")
 	)
 	(pad "14" thru_hole circle
-		(at 6.35 0)
+		(at 7.62 0)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -486,7 +486,7 @@
 		(uuid "00000000-0000-0000-0000-000000000023")
 	)
 	(pad "15" thru_hole circle
-		(at 6.35 -2.54)
+		(at 7.62 -2.54)
 		(size 1.6 1.6)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
